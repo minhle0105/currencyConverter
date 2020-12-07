@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+      <header>
+            <title>Chuyen doi VND va USD</title>
+            <link rel="stylesheet" href="currencyConvert.css">
+      </header>
+      <body>
+            <h1>Chuyen doi ty gia VND va USD</h1>
+            <table class="text">
+                  <tr>
+                        <td class="amount">Amount</td>
+                        <td class="cfrom">From Currency</td>
+                        <td class="cto">To Currency</td>
+                  </tr>
+            </table>
+            <table class="convert">
+                  <tr>
+                        <td class="amount">
+                              <input type="text" id="amount">
+                        </td>
+                        <td class="cfrom">
+                              <select id="currencyFrom">
+                                    <option value="VND">VND</option>
+                                    <option value="USD">USD</option>
+                              </select>
+                        </td>
+                        <td class="cfrom">
+                              <select id="currencyTo">
+                                    <option value="USD">USD</option>
+                                    <option value="VND">VND</option>
+                              </select>
+                        </td>
+                        <td class="convertButton">
+                              <button type="button" id="button" onclick="convert()">Convert</button>
+                        </td>
+                  </tr>
+            </table>
+            <div id="result"></div>
+            <script src="currencyConvert.js"></script>
+      </body>
+</html>
